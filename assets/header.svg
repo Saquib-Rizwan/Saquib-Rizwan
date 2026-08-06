@@ -1,50 +1,58 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 200" width="900" height="200" role="img" aria-label="Saquib Rizwan — I like problems that turn out to be something else">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 260" width="1000" height="260" role="img" aria-label="Saquib Rizwan">
+  <defs>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0"/>
+      <stop offset="35%" stop-color="#F59E0B" stop-opacity="1"/>
+      <stop offset="65%" stop-color="#FBBF24" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#FBBF24" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="nameFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#FB923C"/>
+    </linearGradient>
+  </defs>
+
   <style>
-    .name  { font-family: 'Segoe UI', 'Helvetica Neue', system-ui, sans-serif; font-size: 52px; font-weight: 700; fill: #0f172a; letter-spacing: -1px; }
-    .tag   { font-family: 'SFMono-Regular', 'JetBrains Mono', Consolas, monospace; font-size: 17px; fill: #64748b; }
-    .sub   { font-family: 'Segoe UI', 'Helvetica Neue', system-ui, sans-serif; font-size: 15px; fill: #94a3b8; }
-    .rule  { stroke: #3b82f6; stroke-width: 4; stroke-linecap: round; }
-    .dot   { fill: #3b82f6; }
-    @media (prefers-color-scheme: dark) {
-      .name { fill: #f1f5f9; }
-      .tag  { fill: #94a3b8; }
-      .sub  { fill: #64748b; }
-    }
+    .name { font-family: 'Segoe UI', 'Helvetica Neue', system-ui, sans-serif; font-size: 68px; font-weight: 800; letter-spacing: -2px; }
+    .tag  { font-family: 'SFMono-Regular', 'JetBrains Mono', Consolas, monospace; font-size: 18px; fill: #94a3b8; }
+    .kick { font-family: 'Segoe UI', system-ui, sans-serif; font-size: 15px; fill: #64748b; letter-spacing: 3px; }
   </style>
 
-  <!-- accent rule draws itself left to right -->
-  <line x1="0" y1="46" x2="132" y2="46" class="rule" stroke-dasharray="132" stroke-dashoffset="132">
-    <animate attributeName="stroke-dashoffset" from="132" to="0" dur="0.9s" begin="0.1s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1" />
-  </line>
+  <!-- top hairline sweeps across -->
+  <rect x="0" y="34" width="1000" height="3" fill="url(#glow)" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="1s" begin="0.1s" fill="freeze"/>
+  </rect>
 
-  <!-- name -->
-  <text x="0" y="108" class="name" opacity="0">
-    Saquib Rizwan
-    <animate attributeName="opacity" from="0" to="1" dur="0.7s" begin="0.5s" fill="freeze" />
+  <text x="500" y="76" text-anchor="middle" class="kick" opacity="0">
+    C S   S T U D E N T   ·   F U L L - S T A C K
+    <animate attributeName="opacity" from="0" to="1" dur="0.8s" begin="0.4s" fill="freeze"/>
   </text>
 
-  <!-- monospace tagline -->
-  <text x="2" y="144" class="tag" opacity="0">
+  <text x="500" y="150" text-anchor="middle" class="name" fill="url(#nameFill)" opacity="0">
+    SAQUIB RIZWAN
+    <animate attributeName="opacity" from="0" to="1" dur="0.9s" begin="0.7s" fill="freeze"/>
+  </text>
+
+  <text x="500" y="192" text-anchor="middle" class="tag" opacity="0">
     I like problems that turn out to be something else.
-    <animate attributeName="opacity" from="0" to="1" dur="0.7s" begin="0.9s" fill="freeze" />
+    <animate attributeName="opacity" from="0" to="1" dur="0.9s" begin="1.1s" fill="freeze"/>
   </text>
 
-  <!-- subtitle -->
-  <text x="2" y="176" class="sub" opacity="0">
-    CS student · full-stack · currently building through placement season
-    <animate attributeName="opacity" from="0" to="1" dur="0.7s" begin="1.2s" fill="freeze" />
-  </text>
-
-  <!-- three dots, pulsing in sequence — quiet, not decorative noise -->
+  <!-- three pulsing dots -->
   <g>
-    <circle cx="800" cy="46" r="5" class="dot" opacity="0.25">
-      <animate attributeName="opacity" values="0.25;1;0.25" dur="2.4s" begin="1.4s" repeatCount="indefinite" />
+    <circle cx="476" cy="224" r="5" fill="#F59E0B" opacity="0.2">
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="2.4s" begin="1.5s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="824" cy="46" r="5" class="dot" opacity="0.25">
-      <animate attributeName="opacity" values="0.25;1;0.25" dur="2.4s" begin="1.7s" repeatCount="indefinite" />
+    <circle cx="500" cy="224" r="5" fill="#F59E0B" opacity="0.2">
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="2.4s" begin="1.8s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="848" cy="46" r="5" class="dot" opacity="0.25">
-      <animate attributeName="opacity" values="0.25;1;0.25" dur="2.4s" begin="2.0s" repeatCount="indefinite" />
+    <circle cx="524" cy="224" r="5" fill="#F59E0B" opacity="0.2">
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="2.4s" begin="2.1s" repeatCount="indefinite"/>
     </circle>
   </g>
+
+  <!-- bottom hairline -->
+  <rect x="0" y="248" width="1000" height="3" fill="url(#glow)" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="1s" begin="1.4s" fill="freeze"/>
+  </rect>
 </svg>
