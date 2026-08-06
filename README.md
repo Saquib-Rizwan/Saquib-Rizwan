@@ -52,10 +52,9 @@ Listed honestly — things I've built real things with, not everything I've read
 
 ## Away from the screen
 
-<!-- ↓ Saquib: replace this line with the sports you actually play, and how -->
-Sports — **[TELL ME WHICH AND I'LL WRITE THIS PROPERLY]**.
+**Football and cricket** — the two things that reliably get me off a screen.
 
-Same reason as the debugging, honestly. You're reading a situation, adjusting, and finding out fast whether you were right.
+Same appeal as the debugging, honestly. You read the situation, adjust, and find out quickly whether you were right. Nobody gets to argue with the scoreline.
 
 <br>
 
